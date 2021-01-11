@@ -1,6 +1,11 @@
 #ifndef RENDER_HPP
 #define RENDER_HPP
 
+
+const int MAX_STEPS = 32;
+const double MAX_DISTANCE = 10000.0;
+const double EPSILON = 0.0001;
+
 /*
  This file is here only to be imported by the shader.cpp source
  as we want to keep the file simple for our example.
