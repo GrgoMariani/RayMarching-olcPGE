@@ -19,7 +19,7 @@ There  is a __Makefile__ in the root folder of the project that you should be ab
 
 Prerequisites are to install the required development libraries:
 ```
-$sudo apt install g++ mesa-common-dev freeglut3-dev
+$sudo apt install g++ mesa-common-dev freeglut3-dev libpng-dev
 ```
 
 You will be able to find your executable in the ___./build___ folder

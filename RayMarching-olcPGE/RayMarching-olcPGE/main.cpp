@@ -21,8 +21,8 @@ double iFrameRate = 60.0f;
 class ShaderEngine : public olc::PixelGameEngine
 {
 private:
-	unsigned __int64 startTime;
-	unsigned __int64 lastFrameTime;
+	unsigned long long startTime;
+	unsigned long long lastFrameTime;
 public:
 	ShaderEngine()
 	{
@@ -39,7 +39,7 @@ public:
 
 	bool OnUserUpdate(float fElapsedTime) override
 	{
-		unsigned __int64 nowTime = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+		unsigned long long nowTime = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 		iTime = (nowTime - startTime) / 1000.0f;
 		iTimeDelta = (nowTime - lastFrameTime) / 1000.0f;
 		lastFrameTime = nowTime;
